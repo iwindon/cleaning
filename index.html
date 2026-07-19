@@ -259,13 +259,13 @@
       ];
 
       const dailyRecurring = {
-        0: { charles: '🍽️ Dishes', micah: '🧺 Laundry', evan: '🌿 Water Plants' },
-        1: { charles: '🌿 Water Plants', micah: '🧺 Laundry', evan: '🍽️ Dishes' },
-        2: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🌿 Water Plants' },
-        3: { charles: '🍽️ Dishes', micah: '🧺 Laundry', evan: '🌿 Water Plants' },
-        4: { charles: '🌿 Water Plants', micah: '🧺 Laundry', evan: '🍽️ Dishes' },
-        5: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🌿 Water Plants' },
-        6: { charles: '🍽️ Dishes', micah: '🧺 Laundry', evan: '🌿 Water Plants' },
+        0: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        1: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        2: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        3: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        4: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        5: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        6: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
       };
 
       const roomTasks = {
@@ -273,7 +273,10 @@
           title: 'First Floor: Office & Living Room',
           charles: [{ icon: '🖥️', room: 'Office', tasks: 'Dust surfaces, vacuum floor, organize desk' }],
           micah: [{ icon: '🛋️', room: 'Living Room', tasks: 'Vacuum carpet/floors, dust furniture, straighten cushions & throws' }],
-          evan: [{ icon: '🚿', room: 'First Floor Bathroom', tasks: 'Wipe sink & toilet exterior, replace hand towels, restock soap' }],
+          evan: [
+            { icon: '🚿', room: 'First Floor Bathroom', tasks: 'Wipe sink & toilet exterior, replace hand towels, restock soap' },
+            { icon: '♻️', room: 'Bring Trash Can Back', tasks: 'Return the trash can to the back yard' }
+          ],
         },
         1: {
           title: 'Kitchen & Guest Room',
@@ -283,7 +286,7 @@
         },
         2: {
           title: "Kids' Bedrooms",
-          charles: [{ icon: '🗑️', room: 'Trash Day', tasks: 'Gather & take out all home trash cans' }],
+          charles: [{ icon: '🧼', room: 'Hallway Touch-Up', tasks: 'Quick straighten-up, spot clean surfaces, and tidy shared areas' }],
           micah: [{ icon: '🛏️', room: "Micah's Bedroom", tasks: 'Full clean: vacuum, dust all surfaces, organize & make bed' }],
           evan: [{ icon: '🛏️', room: "Evan's Bedroom", tasks: 'Tidy up, put away clothes, make bed, wipe surfaces' }],
         },
@@ -309,7 +312,10 @@
           title: 'Light Reset & Prep for Week',
           charles: [{ icon: '🖥️', room: 'Office Reset', tasks: 'Tidy desk, restock supplies, check cleaning inventory' }],
           micah: [{ icon: '🚿', room: "Kids' Bathroom Touch-Up", tasks: 'Wipe counters & mirror, restock soap & toilet paper' }],
-          evan: [{ icon: '🎮', room: 'Entertainment Room Reset', tasks: 'Tidy remotes, straighten furniture, quick dust' }],
+          evan: [
+            { icon: '🎮', room: 'Entertainment Room Reset', tasks: 'Tidy remotes, straighten furniture, quick dust' },
+            { icon: '🚮', room: 'Put Trash Out', tasks: 'Roll the trash can out for pickup' }
+          ],
         },
       };
 
