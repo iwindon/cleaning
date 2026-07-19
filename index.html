@@ -279,10 +279,10 @@
           ],
         },
         1: {
-          title: 'Kitchen & Guest Room',
+          title: 'Kitchen & Hallway',
           charles: [{ icon: '🍳', room: 'Kitchen', tasks: 'Wipe counters & stovetop, clean appliances, mop floor' }],
           micah: [{ icon: '🧹', room: 'Vacuum stairs, hallway & entryway', tasks: 'Full vacuum of all steps & landing' }],
-          evan: [{ icon: '🛏️', room: 'Guest Room', tasks: 'Dust surfaces, tidy up, freshen linens' }],
+          evan: [],
         },
         2: {
           title: "Kids' Bedrooms",
@@ -298,15 +298,28 @@
         },
         4: {
           title: 'Master Bath & Touch-Ups',
-          charles: [{ icon: '🛁', room: 'Master Bathroom', tasks: 'Scrub toilet, sink & shower/tub, mop floor' }],
+          charles: [
+            { icon: '🛁', room: 'Master Bathroom', tasks: 'Scrub toilet, sink & shower/tub, mop floor' },
+            { icon: '🛏️', room: 'Bed Sheets', tasks: 'Wash and change the master bed sheets (weekly)' }
+          ],
           micah: [{ icon: '🌬️', room: 'Second Floor Dusting', tasks: 'Dust all surfaces, windowsills & baseboards' }],
           evan: [{ icon: '🛋️', room: 'Living Room Touch-Up', tasks: 'Quick tidy, fluff cushions, wipe coffee table' }],
         },
         5: {
           title: 'Deep Kitchen & Full Vacuuming',
-          charles: [{ icon: '🍳', room: 'Kitchen Deep Clean', tasks: 'Clean oven & microwave, wipe inside fridge, organize pantry' }],
-          micah: [{ icon: '🧹', room: 'Vacuum Entire First Floor', tasks: 'All rooms, hallway & entryway' }],
-          evan: [{ icon: '🧹', room: 'Vacuum Entire Second Floor', tasks: 'All bedrooms, bathrooms & entertainment room' }],
+          charles: [
+            { icon: '🍳', room: 'Kitchen Deep Clean', tasks: 'Clean oven & microwave, wipe inside fridge, organize pantry' },
+            { icon: '🌿', room: 'Yard Trimming', tasks: 'Trim edges and overgrowth in the yard' }
+          ],
+          micah: [
+            { icon: '🧹', room: 'Vacuum Entire First Floor', tasks: 'All rooms, hallway & entryway' },
+            { icon: '🚜', room: 'Mow Grass', tasks: 'Mow the yard grass' },
+            { icon: '🛏️', room: 'Bed Sheets', tasks: 'Wash and change Micah\'s bed sheets (weekly)' }
+          ],
+          evan: [
+            { icon: '🧹', room: 'Vacuum Entire Second Floor', tasks: 'All bedrooms, bathrooms & entertainment room' },
+            { icon: '🍃', room: 'Blow Patio & Driveway', tasks: 'Blow grass and dirt off patio and driveway' }
+          ],
         },
         6: {
           title: 'Light Reset & Prep for Week',
@@ -314,6 +327,7 @@
           micah: [{ icon: '🚿', room: "Kids' Bathroom Touch-Up", tasks: 'Wipe counters & mirror, restock soap & toilet paper' }],
           evan: [
             { icon: '🎮', room: 'Entertainment Room Reset', tasks: 'Tidy remotes, straighten furniture, quick dust' },
+            { icon: '🛏️', room: 'Bed Sheets', tasks: 'Wash and change Evan\'s bed sheets (weekly)' },
             { icon: '🚮', room: 'Put Trash Out', tasks: 'Roll the trash can out for pickup' }
           ],
         },
