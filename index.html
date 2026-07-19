@@ -259,13 +259,13 @@
       ];
 
       const dailyRecurring = {
-        0: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        1: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        2: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        3: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        4: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        5: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
-        6: { charles: '🧺 Laundry', micah: '🍽️ Dishes', evan: '🗑️ Empty Trash' },
+        0: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        1: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        2: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        3: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        4: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        5: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
+        6: { charles: ['🧺 Laundry'], micah: ['🍽️ Dishes'], evan: ['🗑️ Empty Trash', '🌿 Water Plants'] },
       };
 
       const roomTasks = {
@@ -354,7 +354,9 @@
         // Daily recurring task
         const daily = dailyRecurring[dayIdx][personId];
         if (daily) {
-          tasks.push({ id: personId + '_daily', text: daily, type: 'daily' });
+          daily.forEach((dailyTask, index) => {
+            tasks.push({ id: personId + '_daily_' + index, text: dailyTask, type: 'daily' });
+          });
         }
         // Room tasks
         const rooms = roomTasks[dayIdx][personId];
